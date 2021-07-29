@@ -1,13 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap");
+
+html {
+  box-sizing: border-box;
+  font-size: 5vw;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+}
+
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 20px;
+  }
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+#root {
+  height: 100%;
+  font-weight: 600;
+}
+
+.page-frame-enter > div {
+  transform: rotateY(180deg);
+}
+
+.page-frame-enter {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.page-frame-enter-active {
+  transform: rotateY(180deg);
+}
+
+.page-frame-exit {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.page-frame-exit-active {
+  transform: rotateY(180deg);
+}
+
+.page-transition-group {
+  height: 100%;
+}
+
+
+
+
