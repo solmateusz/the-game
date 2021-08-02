@@ -26,6 +26,7 @@ const ContentDiv = styled.div`
   color: #ff7600;
   padding: 2rem;
   height: 85%;
+  min-height: 32rem;
   border-radius: 1rem;
   display: grid;
   justify-content: center;
