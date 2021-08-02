@@ -20,13 +20,15 @@ const ContainerDiv = styled.div`
 `;
 
 const ContentDiv = styled.div`
-  max-width: 40rem;
-  width: 40rem;
+  //max-width: 40rem;
+  margin-left:10px;
+  margin-right: 10px;
+  width: 35rem;
   background: #52006a;
   color: #ff7600;
   padding: 2rem;
-  height: 85%;
-  min-height: 32rem;
+  height: 90%;
+  min-height: 26rem;
   border-radius: 1rem;
   display: grid;
   justify-content: center;
@@ -35,4 +37,5 @@ const ContentDiv = styled.div`
   text-align: center;
   box-shadow: rgba(17, 17, 26, 0.2) 0px 2px 24px,
     rgba(17, 17, 26, 0.2) 0px 2px 56px, rgba(17, 17, 26, 0.4) 0px 2px 80px;
+    overflow: auto;
 `;

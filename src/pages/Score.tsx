@@ -26,9 +26,9 @@ export const Score = () => {
           <Button onClick={() => history.push(Routes.Game)}>Try Again</Button>
         )}
         {lastScore !== undefined && (
-          <DivWithMargin>
+          <div>
             {nickname}, your last score: {lastScore}
-          </DivWithMargin>
+          </div>
         )}
         <DivWithMargin>Top 10 scores:</DivWithMargin>
         <TableWrapper>
