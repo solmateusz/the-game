@@ -1,4 +1,5 @@
 {
+  "homepage": "http://solmateusz.github.io/the-game",
   "name": "the-game",
   "version": "0.1.0",
   "private": true,
@@ -13,8 +14,11 @@
     "normalize.css": "^8.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-transition-group": "^4.4.2",
+    "styled-components": "^5.3.0",
     "typescript": "^4.3.5",
     "web-vitals": "^1.1.2"
   },
@@ -22,7 +26,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -47,8 +53,6 @@
     "@types/react-router-dom": "^5.1.8",
     "@types/react-transition-group": "^4.4.2",
     "@types/styled-components": "^5.1.11",
-    "react-redux": "^7.2.4",
-    "react-router-dom": "^5.2.0",
-    "styled-components": "^5.3.0"
+    "gh-pages": "^3.2.3"
   }
 }
