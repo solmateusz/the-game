@@ -59,6 +59,8 @@ code {
   transition: transform 0.8s;
   transform-style: preserve-3d;
   backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .page-frame-exit-active {
